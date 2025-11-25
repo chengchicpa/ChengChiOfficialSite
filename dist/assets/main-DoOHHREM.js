@@ -1,5 +1,6 @@
-import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-BiEtuCxt.js";function r(){return`
-    <section class="relative h-[600px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
+import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-BLH_UULS.js";function r(){return`
+    <div id="top"></div>
+    <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
       <div class="relative z-10 text-center text-white px-4">
         <h1 class="text-6xl md:text-6xl font-bold mb-10 tracking-wider">${a.title}</h1>

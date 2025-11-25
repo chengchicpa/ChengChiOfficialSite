@@ -1,8 +1,11 @@
-import { companyInfo, navLinks } from '../data/content';
+import { companyInfo, navLinks, teamData } from '../data/content';
 
 export function Footer() {
   const linksHtml = navLinks.map(link =>
     `<a href="${link.href}" class="block hover:text-white">${link.name}</a>`
+  ).join('');
+  const linksMember = teamData.map(member =>
+    `<a href="member.html?id=${member.id}" class="block hover:text-white">${member.name}${member.role}</a>`
   ).join('');
 
   return `
@@ -10,21 +13,21 @@ export function Footer() {
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-12">
         <div>
            <div class="flex items-center gap-2 mb-6">
-             <div class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center">
-               <span class="text-[#B77449] font-bold text-sm">${companyInfo.logoText}</span>
-             </div>
-             <div class="text-white text-lg font-bold tracking-wide">${companyInfo.name}</div>
+             <img src="${companyInfo.logoSquareWhite}" alt="${companyInfo.name}" class="h-30 w-auto">
            </div>
-           <div class="text-xs text-gray-400 space-y-2">
-             <p>${companyInfo.address}</p>
-             <p>電話: ${companyInfo.tel}</p>
-             <p>傳真: ${companyInfo.fax}</p>
+           <div class="text-sm text-gray-300 space-y-2">
+             <div>${companyInfo.address}</div>
+             <div>電話：${companyInfo.tel}</div>
+             <div>傳真：${companyInfo.fax}</div>
            </div>
         </div>
         
-        <div class="flex gap-16 text-xs text-gray-400">
+        <div class="flex gap-16 text-sm text-gray-300">
           <div class="space-y-3">
             ${linksHtml}
+          </div>
+          <div class="space-y-3">
+            ${linksMember}
           </div>
         </div>
       </div>

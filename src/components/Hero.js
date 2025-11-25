@@ -2,7 +2,8 @@ import { heroData, companyInfo } from '../data/content';
 
 export function Hero() {
     return `
-    <section class="relative h-[600px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${heroData.bgImage}');">
+    <div id="top"></div>
+    <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${heroData.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
       <div class="relative z-10 text-center text-white px-4">
         <h1 class="text-6xl md:text-6xl font-bold mb-10 tracking-wider">${heroData.title}</h1>

@@ -1,4 +1,4 @@
-import{d as i,H as e,F as c}from"./Footer-BiEtuCxt.js";function o({title:t,content:s,className:l=""}){return`
+import{d as i,H as e,F as c}from"./Footer-BLH_UULS.js";function o({title:t,content:s,className:l=""}){return`
     <section class="py-20 ${l}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/4">

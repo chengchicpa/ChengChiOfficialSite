@@ -5,13 +5,17 @@ import team3 from '../assets/team-3.png';
 import service1 from '../assets/service-1.png';
 import service2 from '../assets/service-2.png';
 import service3 from '../assets/service-3.png';
-import service4 from '../assets/service-1.png'; // Reusing service 1
+import service4 from '../assets/service-1.png'; 
+import logoHorizon from '../assets/logo-horizon.svg';
+import logoSquareWhite from '../assets/logo-square-white.svg';
 
 export const companyInfo = {
     name: "丞起聯合會計師事務所",
+    logoHorizon: logoHorizon,
+    logoSquareWhite: logoSquareWhite,
     logoText: "CC",
     est: "EST. 2025",
-    address: "104695台北市中山區松江路71號4樓",
+    address: "104695 台北市中山區松江路71號4樓",
     tel: "02-25080750",
     fax: "02-25080750",
     email: "",
@@ -21,8 +25,8 @@ export const companyInfo = {
 
 export const navLinks = [
     { name: "事務所簡介", href: "./about.html" },
-    { name: "服務項目", href: "./index.html#services" },
-    { name: "專業諮詢", href: "./index.html#professionals" }
+    { name: "專業諮詢", href: "./index.html#professionals" },
+    { name: "服務項目", href: "./index.html#services" }
 ];
 
 export const heroData = {
