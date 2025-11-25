@@ -11,7 +11,7 @@ export function Slogan() {
   return `
     <section class="pt-18 pb-24 text-center bg-[#F4F3F1]">
       <span class="font-sans text-sm font-bold uppercase">VALUES</span>
-      <h2 class="text-3xl text-[#B77449] font-bold mb-20">${sloganData.title}</h2>
+      <h2 class="text-3xl text-[#B77449] font-bold mb-16">${sloganData.title}</h2>
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         ${itemsHtml}
       </div>

@@ -19,7 +19,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-16f
   `).join("");return`
     <section class="pt-18 pb-24 text-center bg-[#F4F3F1]">
       <span class="font-sans text-sm font-bold uppercase">VALUES</span>
-      <h2 class="text-3xl text-[#B77449] font-bold mb-20">${i.title}</h2>
+      <h2 class="text-3xl text-[#B77449] font-bold mb-16">${i.title}</h2>
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         ${e}
       </div>
