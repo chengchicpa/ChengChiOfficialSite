@@ -1,4 +1,4 @@
-import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-C53rg2lT.js";function r(){return`
+import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI613Tj.js";function r(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -25,7 +25,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-C53
         ${e}
       </div>
     </section>
-  `}function m(){return`
+  `}function p(){return`
     <section id="about" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/3">
@@ -40,7 +40,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-C53
         </div>
       </div>
     </section>
-  `}function p(){return`
+  `}function m(){return`
     <section id="professionals" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/5">
@@ -66,17 +66,17 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-C53
   `}function g(){return`
     <section id="services" class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-6 text-center mb-16">
-        <span class="font-sans text-sm font-bold uppercase ">SERVICES</span>
+        <span class="font-sans text-sm font-bold uppercase">SERVICES</span>
         <h2 class="text-4xl text-[#B77449] font-bold mb-6">服務項目</h2>
       </div>
 
-      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         ${c.map(t=>`
-    <div class="bg-white shadow-sm hover:shadow-md transition p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
-      <img src="${t.image}" class="w-full md:w-1/2 h-48 object-cover" alt="${t.title}">
-      <div class="text-left">
-        <h3 class="text-xl font-bold text-gray-800 mb-3">${t.title}</h3>
-        <p class="text-gray-500 leading-relaxed mb-4">${t.desc}</p>
+    <div class="bg-[#F4F3F1] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
+      <img src="${t.image}" class="w-full h-64 object-cover" alt="${t.title}">
+      <div class="text-left px-6 pt-4 pb-8">
+        <h3 class="text-2xl font-bold mb-3">${t.title}</h3>
+        <p class="leading-relaxed mb-4">${t.desc}</p>
       </div>
     </div>
   `).join("")}
@@ -87,8 +87,8 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-C53
     ${n()}
     ${r()}
     ${x()}
-    ${m()}
     ${p()}
+    ${m()}
     ${g()}
     ${d()}
   </div>

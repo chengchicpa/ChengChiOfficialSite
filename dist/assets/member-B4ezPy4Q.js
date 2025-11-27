@@ -1,4 +1,4 @@
-import{t as i,H as n,F as r}from"./Footer-C53rg2lT.js";function c(){const t=new URLSearchParams(window.location.search).get("id"),e=i.find(l=>l.id===t);if(!e)return`
+import{t as i,H as n,F as r}from"./Footer-DTI613Tj.js";function c(){const t=new URLSearchParams(window.location.search).get("id"),e=i.find(l=>l.id===t);if(e&&(document.title=`${e.name} - 丞起聯合會計師事務所`),!e)return`
       <section class="py-20 bg-[#F5F5F5] min-h-screen flex items-center justify-center">
         <div class="text-center">
           <h2 class="text-2xl text-gray-800 mb-4">找不到該成員資料</h2>

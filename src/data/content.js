@@ -5,7 +5,7 @@ import team3 from '../assets/team-3.png';
 import service1 from '../assets/service-1.png';
 import service2 from '../assets/service-2.png';
 import service3 from '../assets/service-3.png';
-import service4 from '../assets/service-1.png'; 
+import service4 from '../assets/service-1.png';
 import logoHorizon from '../assets/logo-horizon.svg';
 import logoSquareWhite from '../assets/logo-square-white.svg';
 
@@ -181,7 +181,7 @@ export const servicesData = [
         title: "法律服務",
         desc: `
             <a href="https://www.masterylawcy.com.tw/" target="_blank">辰勝法律事務所</a>專長：
-            <ol>
+            <ol class="list-decimal ml-4">
                 <li>勞資糾紛解決與管理。</li>
                 <li>企業法律顧問、股東權益執行。</li>
                 <li>契約擬定與校正。</li>
