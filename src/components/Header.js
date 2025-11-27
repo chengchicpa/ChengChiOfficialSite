@@ -4,7 +4,7 @@ export function Header() {
   const renderNavItem = (link) => {
     if (link.name === "專業諮詢") {
       const dropdownItems = teamData.map(member =>
-        `<a href="member.html?id=${member.id}" class="block px-4 pt-2 pb-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#B77449]">${member.name}${member.role}</a>`
+        `<a href="${member.id}.html" class="block px-4 pt-2 pb-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#B77449]">${member.name}${member.role}</a>`
       ).join('');
 
       return `

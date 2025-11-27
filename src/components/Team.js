@@ -9,7 +9,9 @@ export function Team() {
       <div>
         <span class="text-[#B77449] font-bold uppercase block">${member.role}</span>
         <h3 class="text-2xl text-gray-800 mb-6">${member.name}</h3>
-        <a href="./member.html?id=${member.id}" class="inline-block bg-[#5E5E5E] text-white px-6 tracking-wider hover:bg-gray-700 transition">了解更多</a>
+      <div class="mt-auto">
+        <a href="${member.id}.html" class="inline-block text-[#B77449] font-bold border-b-2 border-[#B77449] pb-1 hover:text-[#A3825E] hover:border-[#A3825E] transition">了解更多</a>
+      </div>
       </div>
     </div>
   `).join('');

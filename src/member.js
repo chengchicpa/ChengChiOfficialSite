@@ -5,14 +5,17 @@ import { Footer } from './components/Footer';
 import { MemberProfile } from './components/MemberProfile';
 import { setupLoading, LoadingHTML } from './utils/loading';
 
-document.querySelector('#app').innerHTML = `
+const app = document.querySelector('#app');
+const memberId = app.dataset.memberId;
+
+app.innerHTML = `
   ${Header()}
   
   <!-- Spacer for fixed header -->
-  <div class="h-16"></div>
+  <div class="hidden md:block h-16"></div>
 
   <main>
-    ${MemberProfile()}
+    ${MemberProfile(memberId)}
   </main>
   ${Footer()}
   ${LoadingHTML}

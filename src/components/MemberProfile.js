@@ -1,29 +1,11 @@
 import { teamData } from '../data/content';
 
-export function MemberProfile() {
-  // Get member ID from URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const memberId = urlParams.get('id');
+export function MemberProfile(id) {
+  // Get member ID from argument or URL
+  const memberId = id || new URLSearchParams(window.location.search).get('id');
 
   // Find member data
   const member = teamData.find(m => m.id === memberId);
-
-  // Update page title
-  if (member) {
-    document.title = `${member.name} - 丞起聯合會計師事務所`;
-  }
-
-  // Handle case where member is not found
-  if (!member) {
-    return `
-      <section class="py-20 bg-[#F5F5F5] min-h-screen flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl mb-4">找不到該成員資料</h2>
-          <a href="./index.html" class="text-[#B77449] hover:text-[#A3825E] transition">返回首頁</a>
-        </div>
-      </section>
-    `;
-  }
 
   // Helper to render list items
   const renderList = (items) => {
@@ -42,16 +24,16 @@ export function MemberProfile() {
           <!-- Left Column: Image -->
           <div class="w-full md:w-1/3">
             <div class="sticky top-24">
-              <img src="${member.image}" alt="${member.name}" class="w-full h-auto object-cover shadow-lg">
+              <img src="${member.image}" alt="${member.name}${member.role}" class="w-full h-auto object-cover shadow-lg">
             </div>
           </div>
-          
+
           <!-- Right Column: Content -->
           <div class="w-full md:w-1/2">
             <div class="mb-12">
               <span class="text-[#B77449] font-bold block">${member.role}</span>
               <h1 class="text-3xl font-bold mb-10">${member.name}</h1>
-              
+
               <!-- Education -->
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">學歷</h3>

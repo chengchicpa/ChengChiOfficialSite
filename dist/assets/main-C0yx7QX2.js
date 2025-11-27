@@ -1,4 +1,4 @@
-import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}from"./loading-Br4aTuEE.js";function p(){return`
+import{h as a,c as l,s as o,a as s,t as i,b as d,H as c,F as n,d as r,e as x}from"./loading-BOlpkJZ4.js";function p(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -11,7 +11,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}fro
         <img class="absolute top-6 left-0 right-0 m-auto w-17" src="${l.logoOnly}" alt="${l.name} Logo" class="h-10 w-auto">
       </div>
     </section>
-  `}function m(){const e=i.items.map(t=>`
+  `}function m(){const e=o.items.map(t=>`
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${t.title}</h3>
       <p class="text-lg leading-relaxed">${t.desc}</p>
@@ -19,12 +19,12 @@ import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}fro
   `).join("");return`
     <section class="pt-6 pb-28 text-center bg-[#F4F3F1]">
       <span class="relative z-100 font-sans text-sm font-bold uppercase">VALUES</span>
-      <h2 class="text-3xl text-[#B77449] font-bold mb-16">${i.title}</h2>
+      <h2 class="text-3xl text-[#B77449] font-bold mb-16">${o.title}</h2>
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         ${e}
       </div>
     </section>
-  `}function g(){return`
+  `}function b(){return`
     <section id="about" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/3">
@@ -39,7 +39,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}fro
         </div>
       </div>
     </section>
-  `}function b(){return`
+  `}function v(){return`
     <section id="professionals" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/5">
@@ -47,7 +47,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}fro
           <h2 class="text-4xl text-[#B77449] font-bold mb-6">專業諮詢</h2>
         </div>
         <div class="md:w-4/5 text-lg  leading-loose grid grid-cols-1 md:grid-cols-3 gap-8">
-          ${o.map(t=>`
+          ${i.map(t=>`
     <div class="group">
       <div class="overflow-hidden mb-4">
         <img src="${t.image}" alt="${t.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105">
@@ -55,14 +55,16 @@ import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}fro
       <div>
         <span class="text-[#B77449] font-bold uppercase block">${t.role}</span>
         <h3 class="text-2xl text-gray-800 mb-6">${t.name}</h3>
-        <a href="./member.html?id=${t.id}" class="inline-block bg-[#5E5E5E] text-white px-6 tracking-wider hover:bg-gray-700 transition">了解更多</a>
+      <div class="mt-auto">
+        <a href="${t.id}.html" class="inline-block text-[#B77449] font-bold border-b-2 border-[#B77449] pb-1 hover:text-[#A3825E] hover:border-[#A3825E] transition">了解更多</a>
+      </div>
       </div>
     </div>
   `).join("")}
         </div>
       </div>
     </section>
-  `}function v(){return`
+  `}function g(){return`
     <section id="services" class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-6 text-center mb-16">
         <span class="font-sans text-sm font-bold uppercase">SERVICES</span>
@@ -88,9 +90,9 @@ import{h as a,c as l,s as i,a as s,t as o,b as d,H as c,F as n,d as r,e as x}fro
     ${c()}
     ${p()}
     ${m()}
-    ${g()}
     ${b()}
     ${v()}
+    ${g()}
     ${n()}
     <div id="loading">
       <span class="loader"></span>

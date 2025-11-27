@@ -5,7 +5,7 @@ export function Footer() {
     `<a href="${link.href}" class="block hover:text-white">${link.name}</a>`
   ).join('');
   const linksMember = teamData.map(member =>
-    `<a href="member.html?id=${member.id}" class="block hover:text-white">${member.name}${member.role}</a>`
+    `<a href="${member.id}.html" class="block hover:text-white">${member.name}${member.role}</a>`
   ).join('');
 
   const currentYear = new Date().getFullYear();
