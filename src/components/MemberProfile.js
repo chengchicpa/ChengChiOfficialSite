@@ -1,16 +1,21 @@
 import { teamData } from '../data/content';
 
 export function MemberProfile() {
-    // Get member ID from URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const memberId = urlParams.get('id');
+  // Get member ID from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const memberId = urlParams.get('id');
 
-    // Find member data
-    const member = teamData.find(m => m.id === memberId);
+  // Find member data
+  const member = teamData.find(m => m.id === memberId);
 
-    // Handle case where member is not found
-    if (!member) {
-        return `
+  // Update page title
+  if (member) {
+    document.title = `${member.name} - 丞起聯合會計師事務所`;
+  }
+
+  // Handle case where member is not found
+  if (!member) {
+    return `
       <section class="py-20 bg-[#F5F5F5] min-h-screen flex items-center justify-center">
         <div class="text-center">
           <h2 class="text-2xl text-gray-800 mb-4">找不到該成員資料</h2>
@@ -18,20 +23,20 @@ export function MemberProfile() {
         </div>
       </section>
     `;
-    }
+  }
 
-    // Helper to render list items
-    const renderList = (items) => {
-        if (!items || items.length === 0) return '';
-        return items.map(item => `
+  // Helper to render list items
+  const renderList = (items) => {
+    if (!items || items.length === 0) return '';
+    return items.map(item => `
       <li class="flex items-start mb-2">
         <span class="mr-2 text-gray-400">•</span>
         <span class=" text-sm leading-relaxed">${item}</span>
       </li>
     `).join('');
-    };
+  };
 
-    return `
+  return `
     <section class="py-20 bg-[#F5F5F5]">
       <div class="max-w-6xl mx-auto px-6">
         <div class="flex flex-col md:flex-row gap-12 items-start">
