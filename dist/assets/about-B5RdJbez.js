@@ -1,4 +1,4 @@
-import{f as i,c as e,H as a,F as n,L as d,d as c,e as p}from"./loading-CaxW7yrG.js";function o({title:t,content:s,className:l=""}){return`
+import{f as i,c as e,H as o,F as n,L as c,d,e as p}from"./loading-BjE_pHry.js";function a({title:t,content:s,className:l=""}){return`
     <section class="py-20 ${l}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start justify-center gap-12">
         <div class="md:w-1/4">
@@ -9,10 +9,10 @@ import{f as i,c as e,H as a,F as n,L as d,d as c,e as p}from"./loading-CaxW7yrG.
         </div>
       </div>
     </section>
-  `}function r(){const t=i.intro.content.map(s=>`<p>${s}</p>`).join("");return o({title:i.intro.title,content:t,className:"bg-[#F4F3F1]"})}function m(){const t=`
+  `}function r(){const t=i.intro.content.map(s=>`<p>${s}</p>`).join("");return a({title:i.intro.title,content:t,className:"bg-[#F4F3F1]"})}function m(){const t=`
     <p class="font-bold mb-4">${i.philosophy.subtitle}</p>
     ${i.philosophy.content.map(s=>`<p>${s}</p>`).join("")}
-  `;return o({title:i.philosophy.title,content:t,className:"bg-white"})}function f(){const{transport:t}=i.contact,s=`
+  `;return a({title:i.philosophy.title,content:t,className:"bg-white"})}function f(){const{transport:t}=i.contact,s=`
     <div class="mb-12">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5465708468123!2d121.53025354053948!3d25.04945747059941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a961627ae309%3A0x8dc90bdaecb4c39f!2zMTA0OTHoh7rljJfluILkuK3lsbHljYDmnb7msZ_ot683MeiZnw!5e0!3m2!1szh-TW!2stw!4v1764224304339!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -51,18 +51,18 @@ import{f as i,c as e,H as a,F as n,L as d,d as c,e as p}from"./loading-CaxW7yrG.
         </div>
       </div>
     </div>
-  `;return o({title:i.contact.title,content:s,className:"bg-[#F4F3F1]"})}const v=document.getElementById("app");v.innerHTML=`
+  `;return a({title:i.contact.title,content:s,className:"bg-[#F4F3F1]"})}const v=document.getElementById("app");v.innerHTML=`
   <div class="">
-    ${a()}
+    ${o()}
     
     <!-- Spacer for fixed header -->
-    <div class="hidden md:block h-16"></div>
+    <div class="h-16"></div>
 
     ${r()}
     ${m()}
     ${f()}
     
     ${n()}
-    ${d}
+    ${c}
   </div>
-`;c();p();
+`;d();p();

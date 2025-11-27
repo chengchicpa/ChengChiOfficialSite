@@ -1,7 +1,7 @@
 import { heroData, companyInfo } from '../data/content';
 
 export function Hero() {
-    return `
+  return `
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${heroData.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -11,8 +11,7 @@ export function Hero() {
       </div>
       
       <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#F4F3F1] rounded-full flex flex-col items-center justify-center z-20">
-         <span class="text-[#B77449] font-bold text-3xl">${companyInfo.logoText}</span>
-         <span class="text-[10px] text-gray-500 uppercase mt-1">${companyInfo.est}</span>
+        <img class="absolute top-6 left-0 right-0 m-auto w-17" src="${companyInfo.logoOnly}" alt="${companyInfo.name} Logo" class="h-10 w-auto">
       </div>
     </section>
   `;

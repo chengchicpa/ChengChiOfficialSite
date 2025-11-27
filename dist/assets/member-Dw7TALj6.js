@@ -1,4 +1,4 @@
-import{t as a,H as d,F as n,L as c,d as o,e as r}from"./loading-CaxW7yrG.js";function m(){const e=new URLSearchParams(window.location.search).get("id"),s=a.find(l=>l.id===e);if(s&&(document.title=`${s.name} - 丞起聯合會計師事務所`),!s)return`
+import{t as a,H as n,F as c,L as d,d as o,e as r}from"./loading-BjE_pHry.js";function m(){const e=new URLSearchParams(window.location.search).get("id"),s=a.find(l=>l.id===e);if(s&&(document.title=`${s.name} - 丞起聯合會計師事務所`),!s)return`
       <section class="py-20 bg-[#F5F5F5] min-h-screen flex items-center justify-center">
         <div class="text-center">
           <h2 class="text-2xl mb-4">找不到該成員資料</h2>
@@ -70,14 +70,14 @@ import{t as a,H as d,F as n,L as c,d as o,e as r}from"./loading-CaxW7yrG.js";fun
       </div>
     </section>
   `}document.querySelector("#app").innerHTML=`
-  ${d()}
+  ${n()}
   
   <!-- Spacer for fixed header -->
-  <div class="hidden md:block h-16"></div>
+  <div class="h-16"></div>
 
   <main>
     ${m()}
   </main>
-  ${n()}
-  ${c}
+  ${c()}
+  ${d}
 `;o();r();

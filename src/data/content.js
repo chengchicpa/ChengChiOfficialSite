@@ -8,13 +8,13 @@ import service3 from '../assets/service-3.png';
 import service4 from '../assets/service-1.png';
 import logoHorizon from '../assets/logo-horizon.svg';
 import logoSquareWhite from '../assets/logo-square-white.svg';
+import logoOnly from '../assets/logo-only.svg';
 
 export const companyInfo = {
     name: "丞起聯合會計師事務所",
     logoHorizon: logoHorizon,
     logoSquareWhite: logoSquareWhite,
-    logoText: "CC",
-    est: "EST. 2025",
+    logoOnly: logoOnly,
     address: "104695 台北市中山區松江路 71 號 4 樓",
     tel: "02-25080750",
     fax: "02-25080695",

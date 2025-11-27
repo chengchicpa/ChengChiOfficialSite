@@ -1,4 +1,4 @@
-import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d,d as r,e as x}from"./loading-CaxW7yrG.js";function p(){return`
+import{h as a,c as l,s as i,a as s,t as o,b as c,H as d,F as n,d as r,e as x}from"./loading-BjE_pHry.js";function m(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -8,18 +8,17 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d,d as r,e as x}fro
       </div>
       
       <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#F4F3F1] rounded-full flex flex-col items-center justify-center z-20">
-         <span class="text-[#B77449] font-bold text-3xl">${l.logoText}</span>
-         <span class="text-[10px] text-gray-500 uppercase mt-1">${l.est}</span>
+        <img class="absolute top-6 left-0 right-0 m-auto w-17" src="${l.logoOnly}" alt="${l.name} Logo" class="h-10 w-auto">
       </div>
     </section>
-  `}function m(){const e=i.items.map(t=>`
+  `}function p(){const e=i.items.map(t=>`
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${t.title}</h3>
       <p class="text-lg leading-relaxed">${t.desc}</p>
     </div>
   `).join("");return`
-    <section class="pt-18 pb-28 text-center bg-[#F4F3F1]">
-      <span class="font-sans text-sm font-bold uppercase">VALUES</span>
+    <section class="pt-6 pb-28 text-center bg-[#F4F3F1]">
+      <span class="relative z-100 font-sans text-sm font-bold uppercase">VALUES</span>
       <h2 class="text-3xl text-[#B77449] font-bold mb-16">${i.title}</h2>
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         ${e}
@@ -82,15 +81,15 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d,d as r,e as x}fro
   `).join("")}
       </div>
     </section>
-  `}const f=document.getElementById("app");f.innerHTML=`
+  `}const u=document.getElementById("app");u.innerHTML=`
   <div class="">
-    ${n()}
-    ${p()}
+    ${d()}
     ${m()}
+    ${p()}
     ${g()}
     ${b()}
     ${v()}
-    ${d()}
+    ${n()}
     <div id="loading">
       <span class="loader"></span>
     </div>

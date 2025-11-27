@@ -15,7 +15,7 @@ app.innerHTML = `
     ${Header()}
     
     <!-- Spacer for fixed header -->
-    <div class="hidden md:block h-16"></div>
+    <div class="h-16"></div>
 
     ${FirmIntro()}
     ${BrandPhilosophy()}
