@@ -6,11 +6,11 @@ import { companyInfo } from '../data/content';
 const mapPlaceholder = "https://placehold.co/600x400/e2e8f0/475569?text=Map+Placeholder";
 
 export function ContactSection() {
-    const { transport } = aboutPageData.contact;
+  const { transport } = aboutPageData.contact;
 
-    const contentHtml = `
+  const contentHtml = `
     <div class="mb-12">
-      <img src="${mapPlaceholder}" alt="Location Map" class="w-full rounded-lg shadow-sm mb-8">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5465708468123!2d121.53025354053948!3d25.04945747059941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a961627ae309%3A0x8dc90bdaecb4c39f!2zMTA0OTHoh7rljJfluILkuK3lsbHljYDmnb7msZ_ot683MeiZnw!5e0!3m2!1szh-TW!2stw!4v1764224304339!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -49,9 +49,9 @@ export function ContactSection() {
     </div>
   `;
 
-    return SectionLayout({
-        title: aboutPageData.contact.title,
-        content: contentHtml,
-        className: "bg-white"
-    });
+  return SectionLayout({
+    title: aboutPageData.contact.title,
+    content: contentHtml,
+    className: "bg-white"
+  });
 }
