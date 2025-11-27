@@ -27,4 +27,7 @@ app.innerHTML = `
 `;
 
 import { setupLoading } from './utils/loading';
+import { setupHeader } from './components/Header';
+
 setupLoading();
+setupHeader();

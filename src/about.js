@@ -1,7 +1,7 @@
 import './styles/tailwind.css';
 import './styles/main.scss';
 
-import { Header } from './components/Header';
+import { Header, setupHeader } from './components/Header';
 import { Footer } from './components/Footer';
 import { FirmIntro } from './components/FirmIntro';
 import { BrandPhilosophy } from './components/BrandPhilosophy';
@@ -15,7 +15,7 @@ app.innerHTML = `
     ${Header()}
     
     <!-- Spacer for fixed header -->
-    <div class="h-16"></div>
+    <div class="hidden md:block h-16"></div>
 
     ${FirmIntro()}
     ${BrandPhilosophy()}
@@ -27,3 +27,4 @@ app.innerHTML = `
 `;
 
 setupLoading();
+setupHeader();

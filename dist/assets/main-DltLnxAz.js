@@ -1,4 +1,4 @@
-import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI613Tj.js";function r(){return`
+import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d,d as r,e as x}from"./loading-CaxW7yrG.js";function p(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -12,7 +12,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI
          <span class="text-[10px] text-gray-500 uppercase mt-1">${l.est}</span>
       </div>
     </section>
-  `}function x(){const e=i.items.map(t=>`
+  `}function m(){const e=i.items.map(t=>`
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${t.title}</h3>
       <p class="text-lg leading-relaxed">${t.desc}</p>
@@ -25,7 +25,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI
         ${e}
       </div>
     </section>
-  `}function p(){return`
+  `}function g(){return`
     <section id="about" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/3">
@@ -40,7 +40,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI
         </div>
       </div>
     </section>
-  `}function m(){return`
+  `}function b(){return`
     <section id="professionals" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/5">
@@ -63,7 +63,7 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI
         </div>
       </div>
     </section>
-  `}function g(){return`
+  `}function v(){return`
     <section id="services" class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-6 text-center mb-16">
         <span class="font-sans text-sm font-bold uppercase">SERVICES</span>
@@ -82,17 +82,17 @@ import{h as a,c as l,s as i,a as s,t as o,b as c,H as n,F as d}from"./Footer-DTI
   `).join("")}
       </div>
     </section>
-  `}const b=document.getElementById("app");b.innerHTML=`
+  `}const f=document.getElementById("app");f.innerHTML=`
   <div class="">
     ${n()}
-    ${r()}
-    ${x()}
     ${p()}
     ${m()}
     ${g()}
+    ${b()}
+    ${v()}
     ${d()}
     <div id="loading">
       <span class="loader"></span>
     </div>
   </div>
-`;
+`;r();x();
