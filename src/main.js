@@ -12,7 +12,7 @@ import { Footer } from './components/Footer';
 const app = document.getElementById('app');
 
 app.innerHTML = `
-  <div class=" text-[#6D5F56]">
+  <div class="">
     ${Header()}
     ${Hero()}
     ${Slogan()}

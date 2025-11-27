@@ -4,12 +4,17 @@
 :root, :host {
   --font-sans: "Roboto", sans-serif;
   --font-serif: "GenWanMinTW", serif;
+  --color-body: #6D5F56;
   --color-primary: #B77449;
   --color-light: #F4F3F1;
   --scrollbar-color-thumb: #6D5F56;
   --scrollbar-color-track: #E0DED8;
   --scrollbar-width: thin;
   --scrollbar-width-number: 6px;
+}
+
+html{
+  color: var(--color-body);
 }
 
 html, .scrollable{

@@ -1,11 +1,12 @@
 import { aboutPageData } from '../data/content';
 import { SectionLayout } from './SectionLayout';
+import { companyInfo } from '../data/content';
 
 // Placeholder map image since generation failed/skipped
 const mapPlaceholder = "https://placehold.co/600x400/e2e8f0/475569?text=Map+Placeholder";
 
 export function ContactSection() {
-    const { info, transport } = aboutPageData.contact;
+    const { transport } = aboutPageData.contact;
 
     const contentHtml = `
     <div class="mb-12">
@@ -14,16 +15,16 @@ export function ContactSection() {
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <div>
-        <h3 class="text-xl text-gray-800 mb-6">聯絡方式</h3>
+        <h3 class="text-xl mb-6">聯絡方式</h3>
         <div class="space-y-2 ">
-          <p>電話 : ${info.tel}</p>
-          <p>傳真 : ${info.fax}</p>
-          <p>地址 : ${info.address}</p>
+          <p>電話：${companyInfo.tel}</p>
+          <p>傳真：${companyInfo.fax}</p>
+          <p>地址：${companyInfo.address}</p>
         </div>
       </div>
 
       <div>
-        <h3 class="text-xl text-gray-800 mb-6">交通資訊</h3>
+        <h3 class="text-xl mb-6">交通資訊</h3>
         <div class="space-y-6 ">
           <div>
             <p class="font-bold mb-1">捷運 :</p>
