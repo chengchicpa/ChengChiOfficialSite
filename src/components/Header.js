@@ -4,21 +4,17 @@ export function Header() {
   const renderNavItem = (link) => {
     if (link.name === "專業諮詢") {
       const dropdownItems = teamData.map(member =>
-        `<a href="${member.id}.html" class="block px-4 pt-2 pb-4 hover:bg-[#F4F3F1] hover:text-[#B77449]">${member.name}${member.role}</a>`
+        `<a href="${member.id}.html" class="block px-4 pt-1 pb-3 md:pt-2 md:pb-4 bg-[#F4F3F1] md:bg-white hover:bg-[#F4F3F1] hover:text-[#B77449]">${member.name}${member.role}</a>`
       ).join('');
 
       return `
         <div class="relative group">
-          <button class="font-bold w-full md:w-auto block py-2 md:py-0 hover:text-[#B77449] flex items-center gap-1 focus:outline-none cursor-pointer" id="desktop-dropdown-btn">
+          <button class="font-bold w-full md:w-auto block py-2 md:py-0 hover:text-[#B77449] flex justify-center md:justify-start items-center gap-1 focus:outline-none cursor-pointer dropdown-toggle">
             ${link.name}
             <svg class="w-4 h-4 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </button>
-          <!-- Desktop Dropdown -->
-          <div class="hidden md:absolute left-0 mt-2 w-48 bg-white rounded-sm shadow-lg py-1 z-50 border border-gray-100" id="desktop-dropdown-menu">
-            ${dropdownItems}
-          </div>
-          <!-- Mobile Dropdown (initially hidden) -->
-          <div class="md:hidden hidden pl-4 space-y-2 mt-2" id="mobile-dropdown">
+          <!-- Unified Dropdown -->
+          <div class="hidden mt-2 space-y-0 md:absolute md:left-0 md:top-full md:mt-2 md:w-48 md:bg-white md:rounded-sm md:shadow-lg md:py-1 md:z-50 md:border md:border-gray-100 md:pl-0 md:space-y-0 dropdown-menu">
             ${dropdownItems}
           </div>
         </div>
@@ -54,7 +50,7 @@ export function Header() {
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-full shadow-lg h-screen z-100">
-        <nav class="flex flex-col px-6 py-4 space-y-2">
+        <nav class="flex flex-col px-6 py-4 space-y-2 text-center text-lg md:text-base md:text-left">
           ${navItems}
         </nav>
       </div>
@@ -71,40 +67,30 @@ export function setupHeader() {
       menu.classList.toggle('hidden');
     });
 
-    // Mobile Dropdown Toggle
-    const dropdownBtns = menu.querySelectorAll('button');
-    dropdownBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
+    // Unified Dropdown Toggle
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
         e.preventDefault();
-        const dropdown = btn.nextElementSibling;
-        if (dropdown) {
-          dropdown.classList.toggle('hidden');
-        }
-      });
-    });
-
-    // Close menu when clicking a link (but not the dropdown toggle)
-    menu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.add('hidden');
-      });
-    });
-    // Desktop Dropdown Toggle
-    const desktopBtn = document.getElementById('desktop-dropdown-btn');
-    const desktopMenu = document.getElementById('desktop-dropdown-menu');
-
-    if (desktopBtn && desktopMenu) {
-      desktopBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        desktopMenu.classList.toggle('hidden');
-      });
-
-      // Close dropdown when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!desktopBtn.contains(e.target) && !desktopMenu.contains(e.target)) {
-          desktopMenu.classList.add('hidden');
+        const menu = toggle.nextElementSibling;
+        if (menu) {
+          menu.classList.toggle('hidden');
         }
       });
-    }
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+      dropdownToggles.forEach(toggle => {
+        const menu = toggle.nextElementSibling;
+        if (menu && !menu.classList.contains('hidden')) {
+          if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+            menu.classList.add('hidden');
+          }
+        }
+      });
+    });
   }
 }

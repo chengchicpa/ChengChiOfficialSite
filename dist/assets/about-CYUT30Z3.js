@@ -1,4 +1,4 @@
-import{f as l,c as o,H as n,F as d,L as c,d as p,e as r}from"./loading-Dd-uaQW5.js";function e({title:s,subtitle:t,content:i,className:a=""}){return`
+import{f as l,c as o,H as n,F as d,L as c,d as p,e as r}from"./loading-Db3tKqZw.js";function e({title:s,subtitle:t,content:i,className:a=""}){return`
     <section class="py-20 ${a}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start justify-center gap-12">
         <div class="md:w-1/4">
