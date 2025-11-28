@@ -87,6 +87,11 @@ b {
   }
 }
 
+a,
+button {
+  transition: all .3s ease-in-out;
+}
+
 header {
   background-color: rgba(255, 255, 255, .8);
   backdrop-filter: blur(10px);

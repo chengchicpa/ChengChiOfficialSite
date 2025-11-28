@@ -1,4 +1,4 @@
-import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-B8cpRXXF.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
+import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-CSLaUQhE.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>

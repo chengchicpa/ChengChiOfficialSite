@@ -1,4 +1,4 @@
-import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-B8cpRXXF.js";function m(){return`
+import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-CSLaUQhE.js";function m(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -18,7 +18,7 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}fro
     </div>
   `).join("");return`
     <section class="pt-6 pb-28 text-center bg-[#F4F3F1]">
-      <span class="relative z-100 font-sans text-sm font-bold uppercase">VALUES</span>
+      <span class="relative z-20 font-sans text-sm font-bold uppercase">VALUES</span>
       <h2 class="text-3xl text-[#B77449] font-bold mb-16">${o.title}</h2>
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         ${e}
