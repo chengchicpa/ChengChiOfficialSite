@@ -1,11 +1,11 @@
 import { aboutPageData } from '../data/content';
-import { SectionLayout } from './SectionLayout';
+import { AboutLayout } from './AboutLayout';
 import { companyInfo } from '../data/content';
 
 // Placeholder map image since generation failed/skipped
 const mapPlaceholder = "https://placehold.co/600x400/e2e8f0/475569?text=Map+Placeholder";
 
-export function ContactSection() {
+export function AboutContact() {
   const { transport } = aboutPageData.contact;
 
   const contentHtml = `
@@ -49,7 +49,7 @@ export function ContactSection() {
     </div>
   `;
 
-  return SectionLayout({
+  return AboutLayout({
     title: aboutPageData.contact.title,
     subtitle: "Contact",
     content: contentHtml,

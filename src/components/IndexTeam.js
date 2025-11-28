@@ -1,6 +1,6 @@
 import { teamData } from '../data/content';
 
-export function Team() {
+export function IndexTeam() {
   const membersHtml = teamData.map(member => `
     <div class="group">
       <div class="overflow-hidden mb-4">

@@ -1,6 +1,6 @@
 import { heroData, companyInfo } from '../data/content';
 
-export function Hero() {
+export function IndexHero() {
   return `
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${heroData.bgImage}');">

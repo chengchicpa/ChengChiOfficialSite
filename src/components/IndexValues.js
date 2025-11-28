@@ -1,6 +1,6 @@
 import { sloganData } from '../data/content';
 
-export function Slogan() {
+export function IndexValues() {
   const itemsHtml = sloganData.items.map(item => `
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${item.title}</h3>

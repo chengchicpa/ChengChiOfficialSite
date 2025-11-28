@@ -1,6 +1,6 @@
 import { teamData } from '../data/content';
 
-export function MemberProfile(id) {
+export function MemberLayout(id) {
   // Get member ID from argument or URL
   const memberId = id || new URLSearchParams(window.location.search).get('id');
 

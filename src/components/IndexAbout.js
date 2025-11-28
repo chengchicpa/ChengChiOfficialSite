@@ -1,6 +1,6 @@
 import { aboutData } from '../data/content';
 
-export function About() {
+export function IndexAbout() {
   return `
     <section id="about" class="py-20">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">

@@ -2,11 +2,11 @@ import './styles/tailwind.css';
 import './styles/main.scss';
 
 import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Slogan } from './components/Slogan';
-import { About } from './components/About';
-import { Team } from './components/Team';
-import { Services } from './components/Services';
+import { IndexHero } from './components/IndexHero';
+import { IndexValues } from './components/IndexValues';
+import { IndexAbout } from './components/IndexAbout';
+import { IndexTeam } from './components/IndexTeam';
+import { IndexServices } from './components/IndexServices';
 import { Footer } from './components/Footer';
 
 const app = document.getElementById('app');
@@ -14,11 +14,11 @@ const app = document.getElementById('app');
 app.innerHTML = `
   <div class="">
     ${Header()}
-    ${Hero()}
-    ${Slogan()}
-    ${About()}
-    ${Team()}
-    ${Services()}
+    ${IndexHero()}
+    ${IndexValues()}
+    ${IndexAbout()}
+    ${IndexTeam()}
+    ${IndexServices()}
     ${Footer()}
     <div id="loading">
       <span class="loader"></span>

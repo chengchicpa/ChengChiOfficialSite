@@ -1,10 +1,10 @@
 import { aboutPageData } from '../data/content';
-import { SectionLayout } from './SectionLayout';
+import { AboutLayout } from './AboutLayout';
 
-export function FirmIntro() {
+export function AboutFirm() {
     const contentHtml = aboutPageData.intro.content.map(p => `<p>${p}</p>`).join('');
 
-    return SectionLayout({
+    return AboutLayout({
         title: aboutPageData.intro.title,
         subtitle: "About",
         content: contentHtml,

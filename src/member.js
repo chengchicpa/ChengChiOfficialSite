@@ -2,7 +2,7 @@ import './styles/tailwind.css';
 import './styles/main.scss';
 import { Header, setupHeader } from './components/Header';
 import { Footer } from './components/Footer';
-import { MemberProfile } from './components/MemberProfile';
+import { MemberLayout } from './components/MemberLayout';
 import { setupLoading, LoadingHTML } from './utils/loading';
 
 const app = document.querySelector('#app');
@@ -15,7 +15,7 @@ app.innerHTML = `
   <div class="hidden md:block h-16"></div>
 
   <main>
-    ${MemberProfile(memberId)}
+    ${MemberLayout(memberId)}
   </main>
   ${Footer()}
   ${LoadingHTML}

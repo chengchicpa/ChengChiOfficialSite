@@ -1,4 +1,4 @@
-export function SectionLayout({ title, subtitle, content, className = "" }) {
+export function AboutLayout({ title, subtitle, content, className = "" }) {
   return `
     <section class="py-20 ${className}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start justify-center gap-12">

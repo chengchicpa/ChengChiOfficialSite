@@ -1,6 +1,6 @@
 import { servicesData } from '../data/content';
 
-export function Services() {
+export function IndexServices() {
   const servicesHtml = servicesData.map(service => `
     <div class="group bg-[#F4F3F1] rounded-sm overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
       <div class="overflow-hidden mb-4">
