@@ -1,4 +1,4 @@
-import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-BOlpkJZ4.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
+import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-CU66hKL_.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>
@@ -17,7 +17,8 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-BOlpkJZ4.js";fun
           <div class="w-full md:w-1/2">
             <div class="mb-12">
               <span class="text-[#B77449] font-bold block">${l.role}</span>
-              <h1 class="text-3xl font-bold mb-10">${l.name}</h1>
+              <h1 class="text-3xl font-bold mb-6">${l.name}</h1>
+              <p class="mb-12">${l.description}</p>
 
               <!-- Education -->
               <div class="mb-8">
