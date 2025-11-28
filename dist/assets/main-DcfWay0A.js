@@ -1,4 +1,4 @@
-import{h as a,c as l,s as o,a as s,t as i,b as d,H as c,F as n,d as r,e as x}from"./loading-CU66hKL_.js";function p(){return`
+import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-B8cpRXXF.js";function m(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -11,7 +11,7 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as c,F as n,d as r,e as x}fro
         <img class="absolute top-6 left-0 right-0 m-auto w-17" src="${l.logoOnly}" alt="${l.name} Logo" class="h-10 w-auto">
       </div>
     </section>
-  `}function m(){const e=o.items.map(t=>`
+  `}function p(){const e=o.items.map(t=>`
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${t.title}</h3>
       <p class="text-lg leading-relaxed">${t.desc}</p>
@@ -50,7 +50,7 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as c,F as n,d as r,e as x}fro
           ${i.map(t=>`
     <div class="group">
       <div class="overflow-hidden mb-4">
-        <img src="${t.image}" alt="${t.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105">
+        <img src="${t.image}" alt="${t.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105 rounded-sm">
       </div>
       <div>
         <span class="text-[#B77449] font-bold uppercase block">${t.role}</span>
@@ -73,7 +73,7 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as c,F as n,d as r,e as x}fro
 
       <div class="mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         ${d.map(t=>`
-    <div class="group bg-[#F4F3F1] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
+    <div class="group bg-[#F4F3F1] rounded-sm overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
       <div class="overflow-hidden mb-4">
         <img src="${t.image}" class="w-full h-64 object-cover object-top transition duration-500 group-hover:scale-105" alt="${t.title}">
       </div>
@@ -87,13 +87,13 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as c,F as n,d as r,e as x}fro
     </section>
   `}const u=document.getElementById("app");u.innerHTML=`
   <div class="">
-    ${c()}
-    ${p()}
+    ${n()}
     ${m()}
+    ${p()}
     ${b()}
     ${v()}
     ${g()}
-    ${n()}
+    ${c()}
     <div id="loading">
       <span class="loader"></span>
     </div>

@@ -4,7 +4,7 @@ export function Team() {
   const membersHtml = teamData.map(member => `
     <div class="group">
       <div class="overflow-hidden mb-4">
-        <img src="${member.image}" alt="${member.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105">
+        <img src="${member.image}" alt="${member.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105 rounded-sm">
       </div>
       <div>
         <span class="text-[#B77449] font-bold uppercase block">${member.role}</span>

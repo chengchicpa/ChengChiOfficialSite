@@ -2,7 +2,7 @@ import { servicesData } from '../data/content';
 
 export function Services() {
   const servicesHtml = servicesData.map(service => `
-    <div class="group bg-[#F4F3F1] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
+    <div class="group bg-[#F4F3F1] rounded-sm overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
       <div class="overflow-hidden mb-4">
         <img src="${service.image}" class="w-full h-64 object-cover object-top transition duration-500 group-hover:scale-105" alt="${service.title}">
       </div>

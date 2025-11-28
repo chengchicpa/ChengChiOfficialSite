@@ -24,7 +24,7 @@ export function MemberProfile(id) {
           <!-- Left Column: Image -->
           <div class="w-full md:w-1/3">
             <div class="sticky top-24">
-              <img src="${member.image}" alt="${member.name}${member.role}" class="w-full h-auto object-cover shadow-lg">
+              <img src="${member.image}" alt="${member.name}${member.role}" class="w-full h-auto object-cover shadow-lg rounded-sm">
             </div>
           </div>
 

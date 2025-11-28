@@ -1,4 +1,4 @@
-import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-CU66hKL_.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
+import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-B8cpRXXF.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>
@@ -9,7 +9,7 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-CU66hKL_.js";fun
           <!-- Left Column: Image -->
           <div class="w-full md:w-1/3">
             <div class="sticky top-24">
-              <img src="${l.image}" alt="${l.name}${l.role}" class="w-full h-auto object-cover shadow-lg">
+              <img src="${l.image}" alt="${l.name}${l.role}" class="w-full h-auto object-cover shadow-lg rounded-sm">
             </div>
           </div>
 

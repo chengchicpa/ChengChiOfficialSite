@@ -1,4 +1,4 @@
-import{f as l,c as o,H as n,F as d,L as c,d as p,e as r}from"./loading-CU66hKL_.js";function e({title:s,subtitle:t,content:i,className:a=""}){return`
+import{f as l,c as o,H as n,F as d,L as c,d as p,e as r}from"./loading-B8cpRXXF.js";function e({title:s,subtitle:t,content:i,className:a=""}){return`
     <section class="py-20 ${a}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start justify-center gap-12">
         <div class="md:w-1/4">
@@ -15,7 +15,7 @@ import{f as l,c as o,H as n,F as d,L as c,d as p,e as r}from"./loading-CU66hKL_.
     ${l.philosophy.content.map(t=>`<p>${t}</p>`).join("")}
   `;return e({title:l.philosophy.title,subtitle:"Brand Philosophy",content:s,className:"bg-white"})}function f(){const{transport:s}=l.contact,t=`
     <div class="mb-12">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5465708468123!2d121.53025354053948!3d25.04945747059941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a961627ae309%3A0x8dc90bdaecb4c39f!2zMTA0OTHoh7rljJfluILkuK3lsbHljYDmnb7msZ_ot683MeiZnw!5e0!3m2!1szh-TW!2stw!4v1764224304339!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="shadow-sm rounded-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5465708468123!2d121.53025354053948!3d25.04945747059941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a961627ae309%3A0x8dc90bdaecb4c39f!2zMTA0OTHoh7rljJfluILkuK3lsbHljYDmnb7msZ_ot683MeiZnw!5e0!3m2!1szh-TW!2stw!4v1764224304339!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
