@@ -9,7 +9,7 @@ export function Header() {
 
       return `
         <div class="relative group">
-          <button class="font-bold transition block py-2 md:py-0 hover:text-[#B77449] flex items-center gap-1 focus:outline-none cursor-pointer" id="desktop-dropdown-btn">
+          <button class="font-bold w-full md:w-auto block py-2 md:py-0 hover:text-[#B77449] flex items-center gap-1 focus:outline-none cursor-pointer" id="desktop-dropdown-btn">
             ${link.name}
             <svg class="w-4 h-4 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </button>
@@ -24,7 +24,7 @@ export function Header() {
         </div>
       `;
     }
-    return `<a href="${link.href}" class="font-bold transition block py-2 md:py-0 hover:text-[#B77449]">${link.name}</a>`;
+    return `<a href="${link.href}" class="font-bold block py-2 md:py-0 hover:text-[#B77449]">${link.name}</a>`;
   };
 
   const navItems = navLinks.map(renderNavItem).join('');
