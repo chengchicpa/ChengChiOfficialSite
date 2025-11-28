@@ -56,9 +56,9 @@ export const aboutPageData = {
         title: "事務所簡介",
         content: [
             `丞起聯合會計師事務所由
-              <a href="liao-yi-ci.html">廖慧慈會計師</a>
+              <a href="member1.html">廖慧慈會計師</a>
               及
-              <a href="zhang-zhu-yuan.html">張竹淵會計師</a>
+              <a href="member2.html">張竹淵會計師</a>
               共同創立。`,
             "兩位創辦人皆具備勤業、資誠等國際四大會計師事務所十年以上之專業經驗，秉持一致的專業信念與服務理念，以國際級的專業實力，結合對在地產業脈動的深刻理解，致力為企業提供具前瞻性與整合性的專業顧問服務。",
             "我們結合大型事務所的專業深度與精準分析能力，洞悉產業運作與企業治理的實務挑戰，從財務、稅務到整體營運策略，提供高層決策所需的專業判斷與策略建議。丞起以嚴謹、誠信與專業為核心，協助客戶在競爭激烈的市場環境中穩健前行，創造持續的企業價值。",
@@ -91,7 +91,7 @@ export const aboutPageData = {
 
 export const teamData = [
     {
-        id: "liao-yi-ci",
+        id: "member1",
         name: "廖憶慈",
         role: "會計師",
         image: team2,
@@ -124,7 +124,7 @@ export const teamData = [
         ]
     },
     {
-        id: "zhang-zhu-yuan",
+        id: "member2",
         name: "張竹淵",
         role: "會計師",
         image: team3,
@@ -152,7 +152,7 @@ export const teamData = [
         ]
     },
     {
-        id: "lu-wen-cong",
+        id: "member3",
         name: "盧文聰",
         role: "總顧問",
         image: team1,

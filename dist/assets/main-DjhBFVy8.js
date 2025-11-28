@@ -1,4 +1,4 @@
-import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-Db3tKqZw.js";function m(){return`
+import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-n0AUZHO7.js";function m(){return`
     <div id="top"></div>
     <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
       <div class="absolute inset-0 bg-black/40"></div>
@@ -53,8 +53,8 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}fro
         <img src="${t.image}" alt="${t.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105 rounded-sm">
       </div>
       <div>
-        <span class="text-[#B77449] font-bold uppercase block">${t.role}</span>
-        <h3 class="text-2xl text-gray-800 mb-6">${t.name}</h3>
+        <span class="text-sm text-[#B77449] font-bold uppercase block">${t.role}</span>
+        <h3 class="text-2xl font-bold mb-6">${t.name}</h3>
       <div class="mt-auto">
         <a href="${t.id}.html" class="inline-block text-[#B77449] font-bold border-b-2 border-[#B77449] pb-1 hover:text-[#A3825E] hover:border-[#A3825E] transition">了解更多</a>
       </div>

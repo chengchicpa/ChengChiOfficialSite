@@ -1,4 +1,4 @@
-import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-Db3tKqZw.js";function u(a){const d=a||new URLSearchParams(window.location.search).get("id"),l=c.find(s=>s.id===d),i=s=>!s||s.length===0?"":s.map(t=>`
+import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-n0AUZHO7.js";function u(d){const e=d||new URLSearchParams(window.location.search).get("id"),s=o.find(l=>l.id===e);if(!s)return console.error(`Member not found for ID: ${e}`),'<div class="text-center py-20">Member not found</div>';const i=l=>!l||l.length===0?"":l.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>
@@ -9,22 +9,22 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-Db3tKqZw.js";fun
           <!-- Left Column: Image -->
           <div class="w-full md:w-1/3">
             <div class="sticky top-24">
-              <img src="${l.image}" alt="${l.name}${l.role}" class="w-full h-auto object-cover shadow-lg rounded-sm">
+              <img src="${s.image}" alt="${s.name}${s.role}" class="w-full h-auto object-cover shadow-lg rounded-sm">
             </div>
           </div>
 
           <!-- Right Column: Content -->
           <div class="w-full md:w-1/2">
             <div class="mb-12">
-              <span class="text-[#B77449] font-bold block">${l.role}</span>
-              <h1 class="text-3xl font-bold mb-6">${l.name}</h1>
-              <p class="mb-12">${l.description}</p>
+              <span class="text-[#B77449] font-bold block">${s.role}</span>
+              <h1 class="text-3xl font-bold mb-6">${s.name}</h1>
+              <p class="mb-12">${s.description}</p>
 
               <!-- Education -->
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">學歷</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(l.education)}
+                  ${i(s.education)}
                 </ul>
               </div>
 
@@ -34,7 +34,7 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-Db3tKqZw.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">專業資格</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(l.qualifications)}
+                  ${i(s.qualifications)}
                 </ul>
               </div>
 
@@ -44,7 +44,7 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-Db3tKqZw.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">經歷</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(l.experience)}
+                  ${i(s.experience)}
                 </ul>
               </div>
 
@@ -54,7 +54,7 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-Db3tKqZw.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">專業領域</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(l.specialization)}
+                  ${i(s.specialization)}
                 </ul>
               </div>
 
@@ -63,15 +63,15 @@ import{t as c,H as n,F as o,L as r,d as m,e as b}from"./loading-Db3tKqZw.js";fun
         </div>
       </div>
     </section>
-  `}const e=document.querySelector("#app"),v=e.dataset.memberId;e.innerHTML=`
+  `}const a=document.querySelector("#app"),f=a.dataset.memberId;a.innerHTML=`
   ${n()}
   
   <!-- Spacer for fixed header -->
   <div class="hidden md:block h-16"></div>
 
   <main>
-    ${u(v)}
+    ${u(f)}
   </main>
-  ${o()}
+  ${c()}
   ${r}
 `;m();b();

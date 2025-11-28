@@ -7,6 +7,11 @@ export function MemberProfile(id) {
   // Find member data
   const member = teamData.find(m => m.id === memberId);
 
+  if (!member) {
+    console.error(`Member not found for ID: ${memberId}`);
+    return '<div class="text-center py-20">Member not found</div>';
+  }
+
   // Helper to render list items
   const renderList = (items) => {
     if (!items || items.length === 0) return '';

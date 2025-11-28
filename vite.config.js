@@ -11,9 +11,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
-        liao: resolve(__dirname, 'liao-yi-ci.html'),
-        zhang: resolve(__dirname, 'zhang-zhu-yuan.html'),
-        lu: resolve(__dirname, 'lu-wen-cong.html'),
+        member1: resolve(__dirname, 'member1.html'),
+        member2: resolve(__dirname, 'member2.html'),
+        member3: resolve(__dirname, 'member3.html'),
       },
       output: {
         assetFileNames: (assetInfo) => {
