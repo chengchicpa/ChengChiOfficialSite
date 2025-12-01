@@ -1,31 +1,31 @@
-import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-XZHoeZnb.js";function m(){return`
-    <div id="top"></div>
-    <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${a.bgImage}');">
-      <div class="absolute inset-0 bg-black/40"></div>
+import{h as a,s as l,c as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}from"./loading-D6A-qg7w.js";function m(){return`
+    <section id="top" class="relative h-[650px] flex items-center justify-center bg-cover bg-center">
+      <div class="h-16"></div>
+      <div class="absolute top-0 left-0 right-0 bottom-0 inset-0 bg-[#6D5F56]/70"></div>
       <div class="relative z-10 text-center text-white px-4">
-        <h1 class="text-[9vw] md:text-6xl md:text-6xl font-bold mb-[3vw] md:mb-10 tracking-wider">${a.title}</h1>
-        <b class="text-lg md:text-xl text-white/90 font-bold">${a.subtitle}</b>
-      </div>
-      
-      <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#F4F3F1] rounded-full flex flex-col items-center justify-center z-20">
-        <img class="absolute top-6 left-0 right-0 m-auto h-9 w-auto" src="${l.logoOnly}" alt="${l.name} Logo">
+        <h1 class="text-shadow-xl text-[9vw] md:text-6xl md:text-6xl font-bold mb-[3vw] md:mb-10 tracking-wider">${a.title}</h1>
+        <b class="text-shadow-xl text-lg md:text-xl text-white/90 font-bold">${a.subtitle}</b>
       </div>
     </section>
-  `}function p(){const e=o.items.map(t=>`
+  `}function p(){const e=l.items.map(t=>`
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${t.title}</h3>
       <p class="text-lg leading-relaxed">${t.desc}</p>
     </div>
   `).join("");return`
     <section class="pt-12 pb-28 text-center bg-[#F4F3F1]">
+      
+      <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#F4F3F1] rounded-full flex flex-col items-center justify-center z-20">
+        <img class="absolute top-6 left-0 right-0 m-auto h-9 w-auto" src="${o.logoOnly}" alt="${o.name} Logo">
+      </div>
       <span class="relative z-20 font-sans text-sm font-bold uppercase">VALUES</span>
-      <h2 class="tracking-wide text-3xl text-[#B77449] font-bold mt-2 mb-18">${o.title}</h2>
+      <h2 class="tracking-wide text-3xl text-[#B77449] font-bold mt-2 mb-18">${l.title}</h2>
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
         ${e}
       </div>
     </section>
   `}function v(){return`
-    <section id="about" class="py-28">
+    <section id="about" class="bg-white py-28">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/2">
           <span class="font-sans text-sm font-bold uppercase">ABOUT</span>
@@ -40,7 +40,7 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}fro
       </div>
     </section>
   `}function b(){return`
-    <section id="professionals" class="py-28">
+    <section id="professionals" class="bg-2tone py-28">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/5">
           <span class="font-sans text-sm font-bold uppercase">PROFESSIONALS</span>
@@ -55,9 +55,9 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}fro
       <div>
         <span class="text-sm text-[#B77449] font-bold uppercase block">${t.role}</span>
         <h3 class="text-2xl font-bold mb-5">${t.name}</h3>
-      <div class="mt-auto">
-        <a href="${t.id}.html" class="inline-block text-[#B77449] font-bold border-1 border-[#B77449] pt-1 px-12 rounded-xs hover:text-white hover:bg-[#6D5F56] hover:border-[#6D5F56]">了解更多</a>
-      </div>
+        <div class="mt-auto">
+          <a href="${t.id}.html" class="inline-block text-[#B77449] font-bold border-1 border-[#B77449] pt-1 px-12 rounded-xs hover:text-white hover:bg-[#6D5F56] hover:border-[#6D5F56]">了解更多</a>
+        </div>
       </div>
     </div>
   `).join("")}
@@ -87,8 +87,6 @@ import{h as a,c as l,s as o,a as s,t as i,b as d,H as n,F as c,d as r,e as x}fro
     </section>
   `}const u=document.getElementById("app");u.innerHTML=`
   <div class="">
-    <!-- Spacer for fixed header -->
-    <div class="h-16"></div>
     ${n()}
     ${m()}
     ${p()}

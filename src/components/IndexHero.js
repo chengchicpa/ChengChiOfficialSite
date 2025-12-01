@@ -1,17 +1,13 @@
-import { heroData, companyInfo } from '../data/content';
+import { heroData } from '../data/content';
 
 export function IndexHero() {
   return `
-    <div id="top"></div>
-    <section class="relative h-[650px] flex items-center justify-center bg-cover bg-center" style="background-image: url('${heroData.bgImage}');">
-      <div class="absolute inset-0 bg-black/40"></div>
+    <section id="top" class="relative h-[650px] flex items-center justify-center bg-cover bg-center">
+      <div class="h-16"></div>
+      <div class="absolute top-0 left-0 right-0 bottom-0 inset-0 bg-[#6D5F56]/70"></div>
       <div class="relative z-10 text-center text-white px-4">
-        <h1 class="text-[9vw] md:text-6xl md:text-6xl font-bold mb-[3vw] md:mb-10 tracking-wider">${heroData.title}</h1>
-        <b class="text-lg md:text-xl text-white/90 font-bold">${heroData.subtitle}</b>
-      </div>
-      
-      <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-[#F4F3F1] rounded-full flex flex-col items-center justify-center z-20">
-        <img class="absolute top-6 left-0 right-0 m-auto h-9 w-auto" src="${companyInfo.logoOnly}" alt="${companyInfo.name} Logo">
+        <h1 class="text-shadow-xl text-[9vw] md:text-6xl md:text-6xl font-bold mb-[3vw] md:mb-10 tracking-wider">${heroData.title}</h1>
+        <b class="text-shadow-xl text-lg md:text-xl text-white/90 font-bold">${heroData.subtitle}</b>
       </div>
     </section>
   `;

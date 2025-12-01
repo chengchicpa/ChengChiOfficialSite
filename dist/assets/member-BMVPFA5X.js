@@ -1,4 +1,4 @@
-import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-XZHoeZnb.js";function u(d){const e=d||new URLSearchParams(window.location.search).get("id"),s=o.find(l=>l.id===e);if(!s)return console.error(`Member not found for ID: ${e}`),'<div class="text-center py-20">Member not found</div>';const i=l=>!l||l.length===0?"":l.map(t=>`
+import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-D6A-qg7w.js";function u(d){const e=d||new URLSearchParams(window.location.search).get("id"),s=o.find(l=>l.id===e);if(!s)return console.error(`Member not found for ID: ${e}`),'<div class="text-center py-20">Member not found</div>';const i=l=>!l||l.length===0?"":l.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>

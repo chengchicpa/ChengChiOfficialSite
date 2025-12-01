@@ -9,15 +9,15 @@ export function IndexTeam() {
       <div>
         <span class="text-sm text-[#B77449] font-bold uppercase block">${member.role}</span>
         <h3 class="text-2xl font-bold mb-5">${member.name}</h3>
-      <div class="mt-auto">
-        <a href="${member.id}.html" class="inline-block text-[#B77449] font-bold border-1 border-[#B77449] pt-1 px-12 rounded-xs hover:text-white hover:bg-[#6D5F56] hover:border-[#6D5F56]">了解更多</a>
-      </div>
+        <div class="mt-auto">
+          <a href="${member.id}.html" class="inline-block text-[#B77449] font-bold border-1 border-[#B77449] pt-1 px-12 rounded-xs hover:text-white hover:bg-[#6D5F56] hover:border-[#6D5F56]">了解更多</a>
+        </div>
       </div>
     </div>
   `).join('');
 
   return `
-    <section id="professionals" class="py-28">
+    <section id="professionals" class="bg-2tone py-28">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
         <div class="md:w-1/5">
           <span class="font-sans text-sm font-bold uppercase">PROFESSIONALS</span>
