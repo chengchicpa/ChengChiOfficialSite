@@ -23,6 +23,7 @@
           </div>
         </div>
       `}return`<a href="${n.href}" class="font-bold block py-2 mt-1 md:py-0 hover:text-[#B77449]">${n.name}</a>`},i=l.map(o).join("");return`
+    <div id="progressbar"></div>
     <header class="fixed top-0 left-0 right-0 z-50 shadow-sm bg-white/90 backdrop-blur-md">
       <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <!-- Logo -->

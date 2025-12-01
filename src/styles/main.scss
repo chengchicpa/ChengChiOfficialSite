@@ -78,7 +78,7 @@ body {
     transform: translateX(-50%);
     width: 50px;
     height: 1px;
-    background-color: #B77449;
+    background-color: var(--color-primary);
     border-radius: 2px;
   }
 }
@@ -230,4 +230,29 @@ section {
 .bg-2tone {
   background-color: white;
   background-image: linear-gradient(180deg, white 0%, white 50%, var(--color-light) 50%);
+}
+
+#progressbar {
+  @supports (animation-timeline: scroll()) {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-primary);
+    transform-origin: top left;
+    animation-name: pagePercent;
+    animation-direction: alternate;
+    animation-timeline: scroll();
+  }
+}
+
+@keyframes pagePercent {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
 }
