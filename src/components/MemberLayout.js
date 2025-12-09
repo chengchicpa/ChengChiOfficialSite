@@ -1,3 +1,7 @@
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+AOS.init();
+
 import { teamData } from '../data/content';
 
 export function MemberLayout(id) {
@@ -27,14 +31,14 @@ export function MemberLayout(id) {
       <div class="max-w-6xl mx-auto px-6">
         <div class="flex flex-col md:flex-row gap-16 items-start justify-center">
           <!-- Left Column: Image -->
-          <div class="w-full md:w-1/3">
+          <div class="w-full md:w-1/3" data-aos="fade-up" data-aos-duration="600">
             <div class="sticky top-24">
               <img src="${member.image}" alt="${member.name}${member.role}" class="w-full h-auto object-cover shadow-lg rounded-sm">
             </div>
           </div>
 
           <!-- Right Column: Content -->
-          <div class="w-full md:w-1/2">
+          <div class="w-full md:w-1/2" data-aos="fade-up" data-aos-duration="1200">
             <div class="mb-12">
               <span class="text-[#B77449] font-bold block">${member.role}</span>
               <h1 class="text-3xl font-bold mb-6">${member.name}</h1>

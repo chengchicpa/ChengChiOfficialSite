@@ -1,19 +1,19 @@
-import{f as l,c as i,H as n,F as d,L as c,d as p,e as r}from"./loading-BcU7SWpk.js";function a({title:s,subtitle:t,content:o,className:e=""}){return`
+import{A as n,f as a,c as o,H as d,F as c,L as p,d as r,e as m}from"./loading-8TOEuIsP.js";n.init();function i({title:s,subtitle:t,content:l,className:e=""}){return`
     <section class="py-20 ${e}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start justify-center gap-12">
-        <div class="md:w-1/4">
+        <div class="md:w-1/4" data-aos="fade-up" data-aos-duration="1200">
           <span class="font-sans text-sm text-[#B77449] font-bold uppercase">${t}</span>
           <h2 class="text-3xl font-bold mt-2 mb-8">${s}</h2>
         </div>
-        <div class="md:w-2/3 leading-loose space-y-6">
-          ${o}
+        <div class="md:w-2/3 leading-loose space-y-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="250">
+          ${l}
         </div>
       </div>
     </section>
-  `}function m(){const s=l.intro.content.map(t=>`<p>${t}</p>`).join("");return a({title:l.intro.title,subtitle:"About",content:s,className:"bg-[#F4F3F1]"})}function b(){const s=`
-    <p class="text-xl font-bold mb-4 pl-5 border-l-3 border-[#B77449]">${l.philosophy.subtitle}</p>
-    ${l.philosophy.content.map(t=>`<p>${t}</p>`).join("")}
-  `;return a({title:l.philosophy.title,subtitle:"Brand",content:s,className:"bg-white"})}function f(){const{transport:s}=l.contact,t=`
+  `}function b(){const s=a.intro.content.map(t=>`<p>${t}</p>`).join("");return i({title:a.intro.title,subtitle:"About",content:s,className:"bg-[#F4F3F1]"})}function u(){const s=`
+    <p class="text-xl font-bold mb-4 pl-5 border-l-3 border-[#B77449]">${a.philosophy.subtitle}</p>
+    ${a.philosophy.content.map(t=>`<p>${t}</p>`).join("")}
+  `;return i({title:a.philosophy.title,subtitle:"Brand",content:s,className:"bg-white"})}function f(){const{transport:s}=a.contact,t=`
     <div class="mb-12">
       <iframe class="shadow-sm rounded-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5465708468123!2d121.53025354053948!3d25.04945747059941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a961627ae309%3A0x8dc90bdaecb4c39f!2zMTA0OTHoh7rljJfluILkuK3lsbHljYDmnb7msZ_ot683MeiZnw!5e0!3m2!1szh-TW!2stw!4v1764224304339!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -22,9 +22,9 @@ import{f as l,c as i,H as n,F as d,L as c,d as p,e as r}from"./loading-BcU7SWpk.
       <div>
         <h3 class="text-xl font-bold mb-4">聯絡方式</h3>
         <div class="space-y-2 ">
-          <p><span class="font-bold">電話：</span>${i.tel}</p>
-          <p><span class="font-bold">傳真：</span>${i.fax}</p>
-          <p><span class="font-bold">地址：</span>${i.address}</p>
+          <p><span class="font-bold">電話：</span>${o.tel}</p>
+          <p><span class="font-bold">傳真：</span>${o.fax}</p>
+          <p><span class="font-bold">地址：</span>${o.address}</p>
         </div>
       </div>
 
@@ -40,30 +40,30 @@ import{f as l,c as i,H as n,F as d,L as c,d as p,e as r}from"./loading-BcU7SWpk.
           <div>
             <p class="font-bold mb-1">停車場 :</p>
             <ul class="list-disc list-inside pl-2">
-              ${s.parking.map(o=>`<li>${o}</li>`).join("")}
+              ${s.parking.map(l=>`<li>${l}</li>`).join("")}
             </ul>
           </div>
           <div>
             <p class="font-bold mb-1">公車 :</p>
             <ul class="list-disc list-inside pl-2">
-              ${s.bus.map(o=>`<li>${o}</li>`).join("")}
+              ${s.bus.map(l=>`<li>${l}</li>`).join("")}
             </ul>
           </div>
         </div>
       </div>
     </div>
-  `;return a({title:l.contact.title,subtitle:"Contact",content:t,className:"bg-[#F4F3F1]"})}const u=document.getElementById("app");u.innerHTML=`
+  `;return i({title:a.contact.title,subtitle:"Contact",content:t,className:"bg-[#F4F3F1]"})}const v=document.getElementById("app");v.innerHTML=`
   <div class="">
-    ${n()}
+    ${d()}
     
     <!-- Spacer for fixed header -->
     <div class="h-16"></div>
 
-    ${m()}
     ${b()}
+    ${u()}
     ${f()}
     
-    ${d()}
-    ${c}
+    ${c()}
+    ${p}
   </div>
-`;p();r();
+`;r();m();

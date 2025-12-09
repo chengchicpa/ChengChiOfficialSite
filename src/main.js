@@ -1,5 +1,6 @@
 import './styles/tailwind.css';
 import './styles/main.scss';
+import 'aos/dist/aos.css';
 
 import { Header } from './components/Header';
 import { IndexHero } from './components/IndexHero';
@@ -8,6 +9,7 @@ import { IndexAbout } from './components/IndexAbout';
 import { IndexTeam } from './components/IndexTeam';
 import { IndexServices } from './components/IndexServices';
 import { Footer } from './components/Footer';
+import AOS from 'aos';
 
 const app = document.getElementById('app');
 
@@ -31,3 +33,4 @@ import { setupHeader } from './components/Header';
 
 setupLoading();
 setupHeader();
+AOS.init();

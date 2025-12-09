@@ -1,7 +1,7 @@
 import { companyInfo, sloganData } from '../data/content';
 
 export function IndexValues() {
-  const itemsHtml = sloganData.items.map(item => `
+  const itemsHtml = sloganData.items.map((item) => `
     <div>
       <h3 class="text-2xl font-bold mb-8 title-underline">${item.title}</h3>
       <p class="text-lg leading-relaxed text-left">${item.desc}</p>
@@ -16,7 +16,7 @@ export function IndexValues() {
       </div>
       <span class="relative z-20 font-sans text-sm font-bold uppercase">VALUES</span>
       <h2 class="leading-relaxed tracking-wide text-3xl text-[#B77449] font-bold mt-2 mb-18">${sloganData.title}</h2>
-      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-14 sm:gap-8 text-center">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-14 sm:gap-8 text-center" data-aos="fade-up" data-aos-duration="1200">
         ${itemsHtml}
       </div>
     </section>

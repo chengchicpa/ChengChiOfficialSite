@@ -23,3 +23,4 @@ app.innerHTML = `
 
 setupLoading();
 setupHeader();
+AOS.init();

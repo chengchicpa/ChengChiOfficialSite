@@ -1,8 +1,8 @@
 import { servicesData } from '../data/content';
 
 export function IndexServices() {
-  const servicesHtml = servicesData.map(service => `
-    <div class="group bg-[#F4F3F1] rounded-sm overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start">
+  const servicesHtml = servicesData.map((service, index) => `
+    <div class="group bg-[#F4F3F1] rounded-sm overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="${index * 200}">
       <div class="overflow-hidden mb-4">
         <img src="${service.image}" class="w-full h-64 object-cover object-top transition duration-500 group-hover:scale-105" alt="${service.title}">
       </div>

@@ -1,7 +1,7 @@
 import { teamData } from '../data/content';
 
 export function IndexTeam() {
-  const membersHtml = teamData.map(member => `
+  const membersHtml = teamData.map((member, index) => `
     <div class="group">
       <div class="overflow-hidden mb-5">
         <img src="${member.image}" alt="${member.name}" class="w-full h-[400px] object-cover object-top transition duration-500 group-hover:scale-105 rounded-sm">
@@ -17,8 +17,8 @@ export function IndexTeam() {
   `).join('');
 
   return `
-    <section id="professionals" class="bg-2tone py-28">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12">
+    <section id="professionals" class="bg-2tone py-28" >
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-12" data-aos="fade-up" data-aos-duration="1200">
         <div class="md:w-1/5">
           <span class="font-sans text-sm font-bold uppercase">PROFESSIONALS</span>
           <h2 class="tracking-wide text-4xl text-[#B77449] font-bold mt-2 mb-8">專業諮詢</h2>

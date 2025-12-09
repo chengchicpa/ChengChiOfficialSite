@@ -1,4 +1,4 @@
-import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";function u(d){const e=d||new URLSearchParams(window.location.search).get("id"),s=o.find(l=>l.id===e);if(!s)return console.error(`Member not found for ID: ${e}`),'<div class="text-center py-20">Member not found</div>';const i=l=>!l||l.length===0?"":l.map(t=>`
+import{A as o,t as n,H as c,F as r,L as m,d as b,e as u}from"./loading-8TOEuIsP.js";o.init();function f(d){const e=d||new URLSearchParams(window.location.search).get("id"),s=n.find(i=>i.id===e);if(!s)return console.error(`Member not found for ID: ${e}`),'<div class="text-center py-20">Member not found</div>';const l=i=>!i||i.length===0?"":i.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>
@@ -7,14 +7,14 @@ import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";fun
       <div class="max-w-6xl mx-auto px-6">
         <div class="flex flex-col md:flex-row gap-16 items-start justify-center">
           <!-- Left Column: Image -->
-          <div class="w-full md:w-1/3">
+          <div class="w-full md:w-1/3" data-aos="fade-up" data-aos-duration="600">
             <div class="sticky top-24">
               <img src="${s.image}" alt="${s.name}${s.role}" class="w-full h-auto object-cover shadow-lg rounded-sm">
             </div>
           </div>
 
           <!-- Right Column: Content -->
-          <div class="w-full md:w-1/2">
+          <div class="w-full md:w-1/2" data-aos="fade-up" data-aos-duration="1200">
             <div class="mb-12">
               <span class="text-[#B77449] font-bold block">${s.role}</span>
               <h1 class="text-3xl font-bold mb-6">${s.name}</h1>
@@ -24,7 +24,7 @@ import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">學歷</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(s.education)}
+                  ${l(s.education)}
                 </ul>
               </div>
 
@@ -34,7 +34,7 @@ import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">專業資格</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(s.qualifications)}
+                  ${l(s.qualifications)}
                 </ul>
               </div>
 
@@ -44,7 +44,7 @@ import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">經歷</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(s.experience)}
+                  ${l(s.experience)}
                 </ul>
               </div>
 
@@ -54,7 +54,7 @@ import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";fun
               <div class="mb-8">
                 <h3 class="text-xl mb-2 font-bold pb-2 inline-block w-full">專業領域</h3>
                 <ul class="list-disc list-inside ml-4">
-                  ${i(s.specialization)}
+                  ${l(s.specialization)}
                 </ul>
               </div>
 
@@ -63,15 +63,15 @@ import{t as o,H as n,F as c,L as r,d as m,e as b}from"./loading-BcU7SWpk.js";fun
         </div>
       </div>
     </section>
-  `}const a=document.querySelector("#app"),f=a.dataset.memberId;a.innerHTML=`
-  ${n()}
+  `}const a=document.querySelector("#app"),p=a.dataset.memberId;a.innerHTML=`
+  ${c()}
   
   <!-- Spacer for fixed header -->
   <div class="hidden md:block h-16"></div>
 
   <main>
-    ${u(f)}
+    ${f(p)}
   </main>
-  ${c()}
-  ${r}
-`;m();b();
+  ${r()}
+  ${m}
+`;b();u();AOS.init();
