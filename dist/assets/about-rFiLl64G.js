@@ -1,4 +1,4 @@
-import{A as n,f as a,c as o,H as d,F as c,L as p,d as r,e as m}from"./loading-CQ1mAoeI.js";n.init();function i({title:s,subtitle:t,content:l,className:e=""}){return`
+import{A as n,f as a,c as o,H as d,F as c,L as p,d as r,e as m}from"./loading-D9eCibeA.js";n.init();function i({title:s,subtitle:t,content:l,className:e=""}){return`
     <section class="py-20 ${e}">
       <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start justify-center gap-12">
         <div class="md:w-1/4" data-aos="fade-up" data-aos-duration="1200">

@@ -56,7 +56,7 @@ export const aboutPageData = {
         title: "事務所簡介",
         content: [
             `丞起聯合會計師事務所由
-              <a href="member1.html">廖慧慈會計師</a>
+              <a href="member1.html">廖憶慈會計師</a>
               及
               <a href="member2.html">張竹淵會計師</a>
               共同創立。`,
