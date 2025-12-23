@@ -1,4 +1,4 @@
-import{A as o,t as n,c,H as r,F as m,L as b,d as u,e as p}from"./loading-Cr8SiBKP.js";o.init();function f(d){const a=d||new URLSearchParams(window.location.search).get("id"),s=n.find(i=>i.id===a);if(!s)return console.error(`Member not found for ID: ${a}`),'<div class="text-center py-20">Member not found</div>';const l=i=>!i||i.length===0?"":i.map(t=>`
+import{A as o,t as n,c,H as r,F as m,L as b,d as u,e as p}from"./loading-D0JrQ7kx.js";o.init();function f(d){const a=d||new URLSearchParams(window.location.search).get("id"),s=n.find(i=>i.id===a);if(!s)return console.error(`Member not found for ID: ${a}`),'<div class="text-center py-20">Member not found</div>';const l=i=>!i||i.length===0?"":i.map(t=>`
       <li class="flex items-start mb-2">
         <span class="leading-relaxed">${t}</span>
       </li>
