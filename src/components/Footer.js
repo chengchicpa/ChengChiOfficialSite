@@ -33,7 +33,10 @@ export function Footer() {
               ${linksMember}
             </div>
           </div>
-          <span class="text-xs text-gray-400 mt-12 md:mt-auto">Copyright © ${currentYear} 丞起聯合會計師事務所 All rights reserved.</span>
+          <div class="text-xs text-gray-400 mt-12 md:mt-auto">
+            Copyright © ${currentYear} 丞起聯合會計師事務所 All rights reserved.
+            <a href="./privacy.html" class="hover:underline text-gray-400 hover:text-white ml-2">隱私權聲明</a>
+          </div>
         </div>
 
       </div>
