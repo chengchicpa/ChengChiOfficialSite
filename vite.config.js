@@ -14,6 +14,7 @@ export default defineConfig({
         member1: resolve(__dirname, 'member1.html'),
         member2: resolve(__dirname, 'member2.html'),
         member3: resolve(__dirname, 'member3.html'),
+        privacy: resolve(__dirname, 'privacy.html'),
       },
       output: {
         assetFileNames: (assetInfo) => {
